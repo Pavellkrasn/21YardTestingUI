@@ -32,6 +32,7 @@ def test_has_head(page:Page):
     locator = page.locator("Поиск по регионам")
     locator.click()
     expect(page.get_by_role("heading", name="Поиск по городам"))
+    
 
 
 
@@ -41,11 +42,4 @@ def test_has_head(page:Page):
     # expect(page.get_by_role("paragraph", name="Помощь в заключении договора и поддержка на всех стадиях реализации проекта"))
 
 
-def test_get_started_link(page: Page):
-    page.goto("https://playwright.dev/")
 
-    # Click the get started link.
-    page.get_by_role("link", name="Get started").click()
-
-    # Expects page to have a heading with the name of Installation.
-    expect(page.get_by_role("heading", name="Installation")).to_be_visible()
