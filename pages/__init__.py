@@ -1,3 +1,3 @@
-from pages.index_page import IndexPage
+from pages.main_page import MainPage
 
-index_page = IndexPage()
+main_page = MainPage()
